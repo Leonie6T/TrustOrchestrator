@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Button interactions
     initButtonInteractions();
+
+    // Assessment functionality
+    initAssessmentFlow();
 });
 
 // Mobile Menu Toggle
@@ -629,6 +632,158 @@ const additionalStyles = `
 }
 </style>
 `;
+
+// Assessment Flow Functionality
+function initAssessmentFlow() {
+    // Handle assessment form submission
+    const assessmentForm = document.getElementById('trustBenchmarkForm');
+    if (assessmentForm) {
+        assessmentForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleAssessmentSubmission();
+        });
+    }
+
+    // Handle details form submission
+    const detailsForm = document.getElementById('detailsForm');
+    if (detailsForm) {
+        detailsForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleDetailsSubmission();
+        });
+    }
+
+    // Initialize results page
+    if (window.location.pathname.includes('results.html')) {
+        initializeResultsPage();
+    }
+}
+
+function handleAssessmentSubmission() {
+    const form = document.getElementById('trustBenchmarkForm');
+    const formData = new FormData(form);
+    const answers = {};
+    
+    // Collect all answers
+    for (let i = 1; i <= 17; i++) {
+        const questionName = `q${i}`;
+        const selectedValue = formData.get(questionName);
+        if (selectedValue) {
+            answers[questionName] = parseInt(selectedValue);
+        }
+    }
+
+    // Check if all questions are answered
+    const totalQuestions = 17;
+    const answeredQuestions = Object.keys(answers).length;
+    
+    if (answeredQuestions < totalQuestions) {
+        showNotification('Please answer all questions before submitting.', 'error');
+        return;
+    }
+
+    // Store answers in sessionStorage
+    sessionStorage.setItem('assessmentAnswers', JSON.stringify(answers));
+    
+    // Calculate score
+    const totalScore = Object.values(answers).reduce((sum, score) => sum + score, 0);
+    const percentage = Math.round((totalScore / (totalQuestions * 4)) * 100);
+    
+    // Store score
+    sessionStorage.setItem('trustScore', percentage);
+    
+    // Redirect to getdetails page
+    window.location.href = 'getdetails.html';
+}
+
+function handleDetailsSubmission() {
+    const form = document.getElementById('detailsForm');
+    const formData = new FormData(form);
+    const userDetails = {
+        fullName: formData.get('fullName'),
+        company: formData.get('company'),
+        email: formData.get('email')
+    };
+
+    // Store user details
+    sessionStorage.setItem('userDetails', JSON.stringify(userDetails));
+    
+    // Redirect to results page
+    window.location.href = 'results.html';
+}
+
+function initializeResultsPage() {
+    // Get stored data
+    const answers = JSON.parse(sessionStorage.getItem('assessmentAnswers') || '{}');
+    const userDetails = JSON.parse(sessionStorage.getItem('userDetails') || '{}');
+    const trustScore = parseInt(sessionStorage.getItem('trustScore') || '0');
+
+    // Display trust score
+    const scoreElement = document.getElementById('trustScore');
+    if (scoreElement) {
+        scoreElement.textContent = trustScore;
+    }
+
+    // Determine maturity level and highlight appropriate card
+    const maturityLevel = getMaturityLevel(trustScore);
+    highlightMaturityLevel(maturityLevel);
+
+    // Animate score display
+    animateScoreDisplay(trustScore);
+}
+
+function getMaturityLevel(score) {
+    if (score >= 85) return 'trusted';
+    if (score >= 65) return 'emerging';
+    if (score >= 40) return 'gap';
+    return 'risk';
+}
+
+function highlightMaturityLevel(level) {
+    // Remove active class from all cards
+    const allCards = document.querySelectorAll('.level-card');
+    allCards.forEach(card => card.classList.remove('active'));
+
+    // Add active class to the appropriate card
+    const targetCard = document.getElementById(`level-${level}`);
+    if (targetCard) {
+        targetCard.classList.add('active');
+    }
+}
+
+function animateScoreDisplay(score) {
+    const scoreElement = document.getElementById('trustScore');
+    if (!scoreElement) return;
+
+    let currentScore = 0;
+    const increment = Math.ceil(score / 50);
+    const timer = setInterval(() => {
+        currentScore += increment;
+        if (currentScore >= score) {
+            currentScore = score;
+            clearInterval(timer);
+        }
+        scoreElement.textContent = currentScore;
+    }, 30);
+}
+
+function showNotification(message, type = 'success') {
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <span class="notification-icon">${type === 'error' ? '⚠' : '✓'}</span>
+            <span class="notification-message">${message}</span>
+        </div>
+    `;
+
+    document.body.appendChild(notification);
+
+    // Remove after 5 seconds
+    setTimeout(() => {
+        notification.remove();
+    }, 5000);
+}
 
 // Inject additional styles
 document.head.insertAdjacentHTML('beforeend', additionalStyles);

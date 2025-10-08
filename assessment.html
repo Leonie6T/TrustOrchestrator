@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Benchmark Assessment - Trust Orchestrator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="platform-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                    <span class="logo-text">Trust Orchestrator</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="index.html#platform" class="nav-link">Platform</a>
+                        <div class="dropdown-content">
+                            <a href="index.html#overview">Overview</a>
+                            <a href="index.html#features">Features</a>
+                            <a href="index.html#channels">Channels</a>
+                            <a href="index.html#modules">Modules</a>
+                            <a href="index.html#architecture">Architecture</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#use-cases" class="nav-link">Use Cases</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="index.html#resources" class="nav-link">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="index.html#blog">Blog</a>
+                            <a href="index.html#documentation">Documentation</a>
+                            <a href="index.html#academy">Academy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="index.html#company" class="nav-link">Company</a>
+                        <div class="dropdown-content">
+                            <a href="index.html#about">About</a>
+                            <a href="index.html#team">Executive Team</a>
+                            <a href="index.html#values">Values</a>
+                            <a href="index.html#partners">Partners</a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn-primary">Contact Us</button>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Assessment Hero Section -->
+    <section class="assessment-hero">
+        <div class="container">
+            <div class="assessment-header">
+                <h1 class="assessment-title">Conversational AI Trust Benchmark</h1>
+                <p class="assessment-subtitle">Assess how trusted and governed your Conversational AI really is.</p>
+                <p class="assessment-tagline">AI fluency is easy. Trusted automation isn't.</p>
+            </div>
+
+            <div class="assessment-intro">
+                <p>This benchmark measures how effectively your organisation governs, controls, and proves the trustworthiness of its Conversational AI, across four dimensions: <strong>Context, Control, Compliance, and Confidence</strong>.</p>
+                
+                <div class="instructions-box">
+                    <h3 class="instructions-title">Instructions</h3>
+                    <p>Answer each question by selecting the option that best describes your organisation's current Conversational AI capability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Form -->
+    <section class="assessment-form-section">
+        <div class="container">
+            <form class="assessment-form" id="trustBenchmarkForm">
+                
+                <!-- Section 1: Understanding and Adaptability -->
+                <div class="assessment-section">
+                    <h2 class="section-title">Section 1 — Understanding and Adaptability</h2>
+                    
+                    <div class="question-group">
+                        <div class="question">
+                            <h3 class="question-title">1. Intent Accuracy</h3>
+                            <p class="question-description">When your AI agent receives the same request phrased in different ways — some vague, some multi-part — how accurately does it interpret the intended meaning or goal?</p>
+                            <div class="scale-labels">
+                                <span>1 = Frequently misinterprets intents</span>
+                                <span>4 = Accurately identifies intent across all variations</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q1" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q1" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q1" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q1" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">2. Response Consistency</h3>
+                            <p class="question-description">When given similar requests under varying wording or phrasing, how consistently does your AI agent deliver the same correct response or action each time?</p>
+                            <div class="scale-labels">
+                                <span>1 = Highly inconsistent; results vary widely</span>
+                                <span>4 = Fully consistent and reliable outcomes across all variations</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q2" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q2" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q2" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q2" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">3. Data Context Adaptation</h3>
+                            <p class="question-description">When connected to different datasets or systems (e.g., CRM vs. billing), how well does your AI adapt its responses to reflect the correct data and context?</p>
+                            <div class="scale-labels">
+                                <span>1 = Fails to adapt; uses generic responses</span>
+                                <span>4 = Fully adapts and tailors responses accurately to context</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q3" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q3" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q3" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q3" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">4. Handling Incomplete Inputs</h3>
+                            <p class="question-description">When a request lacks key information, how effectively does your AI identify gaps and ask clarifying questions before responding or acting?</p>
+                            <div class="scale-labels">
+                                <span>1 = Does not recognise missing information</span>
+                                <span>4 = Reliably identifies and gathers all missing data first</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q4" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q4" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q4" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q4" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Conversation Flow and Resilience -->
+                <div class="assessment-section">
+                    <h2 class="section-title">Section 2 — Conversation Flow and Resilience</h2>
+                    
+                    <div class="question-group">
+                        <div class="question">
+                            <h3 class="question-title">5. Interruption Management</h3>
+                            <p class="question-description">When interrupted mid-process, how effectively does your AI pause, handle the interruption, and return to the original flow without confusion or loss of context?</p>
+                            <div class="scale-labels">
+                                <span>1 = Fails to recover; loses context</span>
+                                <span>4 = Seamlessly resumes with full context retained</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q5" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q5" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q5" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q5" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">6. Topic and Sentiment Shifts</h3>
+                            <p class="question-description">When customers change topics or tone, how effectively does your AI recognise and adapt before resuming the conversation?<br><br><em>Example: If a user moves from a complaint ("This is ridiculous!") to a billing question, does your AI acknowledge the frustration, adjust tone, and proceed helpfully?</em></p>
+                            <div class="scale-labels">
+                                <span>1 = Fails to detect or adjust</span>
+                                <span>4 = Fully adaptive to both topic and sentiment changes</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q6" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q6" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q6" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q6" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">7. Situational Diagnosis</h3>
+                            <p class="question-description">In troubleshooting or product guidance scenarios, how well does your AI analyse the situation or root cause before offering a solution?</p>
+                            <div class="scale-labels">
+                                <span>1 = Responds without analysis</span>
+                                <span>4 = Performs thorough, accurate situational diagnosis every time</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q7" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q7" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q7" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q7" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Continuity and Traceability -->
+                <div class="assessment-section">
+                    <h2 class="section-title">Section 3 — Continuity and Traceability</h2>
+                    
+                    <div class="question-group">
+                        <div class="question">
+                            <h3 class="question-title">8. Cross-Channel Continuity</h3>
+                            <p class="question-description">When a customer moves from one channel to another (e.g., voice to WhatsApp), how effectively does your AI retain and apply prior context?</p>
+                            <div class="scale-labels">
+                                <span>1 = Context lost</span>
+                                <span>4 = Full context continuity across all channels</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q8" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q8" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q8" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q8" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">9. Audit Trail Completeness</h3>
+                            <p class="question-description">How complete and auditable is the record of each AI conversation (rules applied, data used, actions taken)?</p>
+                            <div class="scale-labels">
+                                <span>1 = Minimal or incomplete audit records</span>
+                                <span>4 = Fully comprehensive and auditable trail</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q9" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q9" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q9" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q9" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">10. Profile Personalisation</h3>
+                            <p class="question-description">How effectively does your AI adjust tone, priorities, and response style based on the user's profile or relationship history?</p>
+                            <div class="scale-labels">
+                                <span>1 = Same tone and responses for all users</span>
+                                <span>4 = Fully personalised and context-aware communication</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q10" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q10" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q10" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q10" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: Collaboration and Control -->
+                <div class="assessment-section">
+                    <h2 class="section-title">Section 4 — Collaboration and Control</h2>
+                    
+                    <div class="question-group">
+                        <div class="question">
+                            <h3 class="question-title">11. Multi-Agent Coordination</h3>
+                            <p class="question-description">For processes involving multiple agents or systems, how cohesively and seamlessly does your AI collaborate while maintaining shared context?</p>
+                            <div class="scale-labels">
+                                <span>1 = Fragmented or conflicting hand-offs</span>
+                                <span>4 = Fully seamless multi-agent orchestration</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q11" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q11" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q11" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q11" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">12. Rule and Knowledge Alignment</h3>
+                            <p class="question-description">How consistently does your AI adhere to approved business rules and knowledge sources when responding?</p>
+                            <div class="scale-labels">
+                                <span>1 = Frequently deviates from rules</span>
+                                <span>4 = Fully aligned, rule-bound, and policy-compliant</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q12" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q12" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q12" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q12" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">13. Testing Environment Maturity</h3>
+                            <p class="question-description">How well does your AI platform support safe, controlled environments for testing new logic or integrations before deployment?</p>
+                            <div class="scale-labels">
+                                <span>1 = No testing environment</span>
+                                <span>4 = Fully governed, version-controlled, and auditable testing environment</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q13" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q13" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q13" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q13" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5: System Integration and Safeguards -->
+                <div class="assessment-section">
+                    <h2 class="section-title">Section 5 — System Integration and Safeguards</h2>
+                    
+                    <div class="question-group">
+                        <div class="question">
+                            <h3 class="question-title">14. Omnichannel Adaptation</h3>
+                            <p class="question-description">When operating across voice and chat, how well does your AI adapt its language and structure to each channel's needs?</p>
+                            <div class="scale-labels">
+                                <span>1 = Uses identical responses across channels</span>
+                                <span>4 = Fully natural, channel-optimised engagement</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q14" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q14" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q14" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q14" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">15. Escalation with Context Transfer</h3>
+                            <p class="question-description">When a customer requests escalation, how reliably does your AI transfer full conversation context to a human or specialist agent?</p>
+                            <div class="scale-labels">
+                                <span>1 = No context transfer</span>
+                                <span>4 = Fully seamless and complete transfer every time</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q15" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q15" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q15" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q15" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">16. Sensitive Data and Authentication</h3>
+                            <p class="question-description">How reliably does your AI authenticate users and enforce access policies when handling sensitive or account data?</p>
+                            <div class="scale-labels">
+                                <span>1 = Unreliable or inconsistent authentication</span>
+                                <span>4 = Fully compliant and consistently enforced</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q16" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q16" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q16" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q16" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <h3 class="question-title">17. Structured Data Retrieval</h3>
+                            <p class="question-description">How effectively does your AI fetch, structure, and return accurate data from multiple enterprise systems?</p>
+                            <div class="scale-labels">
+                                <span>1 = Unable to retrieve or returns errors</span>
+                                <span>4 = Fully accurate and consistent across systems</span>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="q17" value="1" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">1</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q17" value="2" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">2</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q17" value="3" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">3</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="q17" value="4" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">4</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Section -->
+                <div class="assessment-submit">
+                    <button type="submit" class="btn btn-primary btn-large">Submit My Answers →</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                        <span class="logo-text">Trust Orchestrator</span>
+                    </div>
+                    <p>Powering Conversational AI you can trust</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html#overview">Overview</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#channels">Channels</a></li>
+                        <li><a href="index.html#modules">Modules</a></li>
+                        <li><a href="index.html#architecture">Architecture</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#documentation">Documentation</a></li>
+                        <li><a href="index.html#academy">Academy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#team">Executive Team</a></li>
+                        <li><a href="index.html#values">Values</a></li>
+                        <li><a href="index.html#partners">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trust Orchestrator. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
