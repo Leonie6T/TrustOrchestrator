@@ -1,6 +1,6 @@
 # Trust Orchestrator Website
 
-A modern, responsive website for Trust Orchestrator - a conversational AI platform designed for regulated industries.
+A modern, responsive website for Trust Orchestrator - a conversational AI orchestration platform designed for regulated industries.
 
 ## Overview
 
