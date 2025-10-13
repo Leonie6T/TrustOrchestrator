@@ -435,11 +435,6 @@ body {
     position: relative;
 }
 
-/* Premium styling without visual indicators */
-.capability-row.premium {
-    /* Premium styling maintained without star icon */
-}
-
 /* 2025 Capability Cards with Advanced Features */
 .capability-row {
     background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
