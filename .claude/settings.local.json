@@ -1,4 +1,4 @@
-{
+q{
   "permissions": {
     "allow": [
       "WebFetch(domain:www.cognigy.com)"
