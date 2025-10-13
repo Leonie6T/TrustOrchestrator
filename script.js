@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Assessment functionality
     initAssessmentFlow();
+
+    // Accordion functionality for ingredients
+    initAccordion();
 });
 
 // Mobile Menu Toggle
@@ -783,6 +786,30 @@ function showNotification(message, type = 'success') {
     setTimeout(() => {
         notification.remove();
     }, 5000);
+}
+
+// Accordion Functionality for Ingredients Section
+function initAccordion() {
+    const ingredientItems = document.querySelectorAll('.ingredient-item');
+
+    ingredientItems.forEach(item => {
+        const header = item.querySelector('.ingredient-header');
+        const toggle = item.querySelector('.accordion-toggle');
+
+        if (header && toggle) {
+            header.addEventListener('click', function() {
+                // Close all other items
+                ingredientItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        }
+    });
 }
 
 // Inject additional styles

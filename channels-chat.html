@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unassisted Chat | Trust Orchestrator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="channels-chat-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                    <span class="logo-text">Trust Orchestrator</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="platform.html" class="nav-link">Platform</a>
+                        <div class="dropdown-content">
+                            <a href="platform.html#overview">Overview</a>
+                            <a href="platform.html#features">Features</a>
+                            <a href="platform.html#channels">Channels</a>
+                            <a href="platform.html#modules">Modules</a>
+                            <a href="platform.html#architecture">Architecture</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="use-cases.html" class="nav-link">Use Cases</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#resources" class="nav-link">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="#blog">Blog</a>
+                            <a href="#documentation">Documentation</a>
+                            <a href="#academy">Academy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#company" class="nav-link">Company</a>
+                        <div class="dropdown-content">
+                            <a href="#about">About</a>
+                            <a href="#team">Executive Team</a>
+                            <a href="#values">Values</a>
+                            <a href="#partners">Partners</a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn-primary">Contact Us</button>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="chat-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="platform.html">Platform</a>
+                <span class="separator">/</span>
+                <a href="platform.html#channels">Channels</a>
+                <span class="separator">/</span>
+                <span class="current">Unassisted Chat</span>
+            </div>
+
+            <div class="hero-split">
+                <!-- Chat Interface Visual -->
+                <div class="chat-interface-container">
+                    <div class="chat-interface">
+                        <div class="chat-header">
+                            <div class="chat-status">
+                                <span class="status-dot"></span>
+                                <span>AI Assistant</span>
+                            </div>
+                        </div>
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="chat-bubble customer">
+                                Hi, I need to update my delivery address
+                            </div>
+                            <div class="chat-bubble ai">
+                                I can help you with that. Let me verify your identity first.
+                            </div>
+                            <div class="chat-bubble customer">
+                                Sure, my account email is john@example.com
+                            </div>
+                            <div class="chat-bubble ai">
+                                Thank you. I've verified your account. What's your new delivery address?
+                            </div>
+                            <div class="chat-bubble customer">
+                                123 Main Street, Apartment 4B, New York, NY 10001
+                            </div>
+                            <div class="chat-bubble ai typing">
+                                <span class="typing-indicator">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Content -->
+                <div class="hero-content">
+                    <h1>Automate More Chat Conversations Without Relying on Live Agents</h1>
+                    <div class="hero-intro">
+                        <p>Most chat systems depend on human agents to take over once a query becomes complex or context-heavy.</p>
+                        <p><strong>Trust Orchestrator changes that</strong> by enabling natural, free-flowing chat conversations that resolve issues instantly, unassisted, and with the intelligence of a human expert.</p>
+                        <p>These AI-driven chat experiences understand intent, manage context, and follow process guardrails to deliver accurate, compliant, and human-like interactions every time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Capabilities Section -->
+    <section class="capabilities-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Capabilities</h2>
+                <p>Everything you need to deliver expert-level chat experiences without human intervention</p>
+            </div>
+
+            <div class="capabilities-table">
+                <div class="capability-row">
+                    <div class="capability-feature">
+                        <div class="feature-icon">💬</div>
+                        <h3>Natural Conversations</h3>
+                    </div>
+                    <div class="capability-description">
+                        <p>Moves beyond menu-driven bots to enable fluid, human-like exchanges.</p>
+                    </div>
+                </div>
+
+                <div class="capability-row">
+                    <div class="capability-feature">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Intent and Context Understanding</h3>
+                    </div>
+                    <div class="capability-description">
+                        <p>Analyses each message to clarify needs and goals before responding.</p>
+                    </div>
+                </div>
+
+                <div class="capability-row">
+                    <div class="capability-feature">
+                        <div class="feature-icon">📋</div>
+                        <h3>Trusted Data Gathering</h3>
+                    </div>
+                    <div class="capability-description">
+                        <p>Collects missing documents, images, or details required to process requests.</p>
+                    </div>
+                </div>
+
+                <div class="capability-row">
+                    <div class="capability-feature">
+                        <div class="feature-icon">🔐</div>
+                        <h3>Authentication and Authorization</h3>
+                    </div>
+                    <div class="capability-description">
+                        <p>Verifies identity and obtains consent before executing sensitive actions.</p>
+                    </div>
+                </div>
+
+                <div class="capability-row">
+                    <div class="capability-feature">
+                        <div class="feature-icon">📤</div>
+                        <h3>Proactive Outreach</h3>
+                    </div>
+                    <div class="capability-description">
+                        <p>Initiates outbound service or sales chats in context with previous interactions.</p>
+                    </div>
+                </div>
+
+                <div class="capability-row">
+                    <div class="capability-feature">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Expert-Level Engagement</h3>
+                    </div>
+                    <div class="capability-description">
+                        <p>Handles queries that typically require human agents.</p>
+                    </div>
+                </div>
+
+                <div class="capability-row">
+                    <div class="capability-feature">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Cross-Channel Continuity</h3>
+                    </div>
+                    <div class="capability-description">
+                        <p>Transfers full context seamlessly if the conversation moves to another channel.</p>
+                    </div>
+                </div>
+
+                <div class="capability-row">
+                    <div class="capability-feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instant One-Touch Resolution</h3>
+                    </div>
+                    <div class="capability-description">
+                        <p>Reduces waiting times and eliminates unnecessary handovers.</p>
+                    </div>
+                </div>
+
+                <div class="capability-row">
+                    <div class="capability-feature">
+                        <div class="feature-icon">📊</div>
+                        <h3>Full Tracking and Auditability</h3>
+                    </div>
+                    <div class="capability-description">
+                        <p>Logs every message, response, and action for compliance and reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>See Trust Orchestrator in Action</h2>
+                <p>Discover how AI-powered chat can transform your customer experience</p>
+                <div class="cta-buttons">
+                    <a href="#demo" class="btn btn-primary btn-large">Watch Demo</a>
+                    <a href="#use-cases" class="btn btn-secondary btn-large">See Chat Use Cases</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                        <span class="logo-text">Trust Orchestrator</span>
+                    </div>
+                    <p>Powering Conversational AI you can trust</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="platform.html#overview">Overview</a></li>
+                        <li><a href="platform.html#features">Features</a></li>
+                        <li><a href="platform.html#channels">Channels</a></li>
+                        <li><a href="platform.html#modules">Modules</a></li>
+                        <li><a href="platform.html#architecture">Architecture</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#documentation">Documentation</a></li>
+                        <li><a href="#academy">Academy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Executive Team</a></li>
+                        <li><a href="#values">Values</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trust Orchestrator. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="channels-chat-script.js"></script>
+</body>
+</html>
