@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Cases - Trust Orchestrator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="use-cases-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                        <span class="logo-text">Trust Orchestrator</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="platform.html" class="nav-link">Platform</a>
+                        <div class="dropdown-content">
+                            <a href="platform.html#overview">Overview</a>
+                            <a href="platform.html#features">Features</a>
+                            <a href="platform.html#channels">Channels</a>
+                            <a href="platform.html#modules">Modules</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="use-cases.html" class="nav-link active">Use Cases</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="blog.html" class="nav-link">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="documentation.html">Documentation</a>
+                            <a href="academy.html">Academy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="company.html" class="nav-link">Company</a>
+                        <div class="dropdown-content">
+                            <a href="company.html#about">About</a>
+                            <a href="company.html#team">Executive Team</a>
+                            <a href="company.html#values">Values</a>
+                            <a href="company.html#partners">Partners</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Use Cases Hero -->
+    <section class="use-cases-hero">
+        <div class="hero-background"></div>
+        <div class="use-cases-hero-content">
+            <span class="hero-badge">Use Cases</span>
+            <h1>Transform Every Customer Interaction</h1>
+            <p class="use-cases-hero-subtitle">Discover how organizations across industries are using Trust Orchestrator to deliver exceptional conversational AI experiences</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="use-cases-container">
+            <div class="filters-header">
+                <h2>Explore by Category</h2>
+                <p>Filter use cases by industry, department, or solution type</p>
+            </div>
+
+            <div class="filters-tabs">
+                <button class="filter-tab active" data-filter-type="all">All Use Cases</button>
+                <button class="filter-tab" data-filter-type="industry">By Industry</button>
+                <button class="filter-tab" data-filter-type="department">By Department</button>
+                <button class="filter-tab" data-filter-type="solution">By Solution Type</button>
+            </div>
+
+            <!-- Industry Filters -->
+            <div class="filter-options" id="industryFilters" style="display: none;">
+                <button class="filter-btn" data-category="financial">Financial Services</button>
+                <button class="filter-btn" data-category="healthcare">Healthcare</button>
+                <button class="filter-btn" data-category="retail">Retail & E-commerce</button>
+                <button class="filter-btn" data-category="telecom">Telecommunications</button>
+                <button class="filter-btn" data-category="government">Government</button>
+                <button class="filter-btn" data-category="education">Education</button>
+                <button class="filter-btn" data-category="travel">Travel & Hospitality</button>
+                <button class="filter-btn" data-category="utilities">Utilities</button>
+            </div>
+
+            <!-- Department Filters -->
+            <div class="filter-options" id="departmentFilters" style="display: none;">
+                <button class="filter-btn" data-category="customer-service">Customer Service</button>
+                <button class="filter-btn" data-category="sales">Sales</button>
+                <button class="filter-btn" data-category="it-support">IT Support</button>
+                <button class="filter-btn" data-category="hr">Human Resources</button>
+                <button class="filter-btn" data-category="finance">Finance</button>
+                <button class="filter-btn" data-category="operations">Operations</button>
+            </div>
+
+            <!-- Solution Type Filters -->
+            <div class="filter-options" id="solutionFilters" style="display: none;">
+                <button class="filter-btn" data-category="self-service">Self-Service Automation</button>
+                <button class="filter-btn" data-category="agent-assist">Agent Assistance</button>
+                <button class="filter-btn" data-category="voice">Voice Automation</button>
+                <button class="filter-btn" data-category="chat">Chat Solutions</button>
+                <button class="filter-btn" data-category="outbound">Outbound Engagement</button>
+                <button class="filter-btn" data-category="analytics">Analytics & Insights</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Grid -->
+    <section class="use-cases-grid-section">
+        <div class="use-cases-container">
+            <div class="section-stats">
+                <div class="stat-box">
+                    <span class="stat-number" id="totalUseCases">0</span>
+                    <span class="stat-label">Use Cases</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Industries</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Implementations</span>
+                </div>
+            </div>
+
+            <!-- Use Cases Grid -->
+            <div class="use-cases-grid" id="useCasesGrid">
+                <!-- Placeholder Coming Soon Card -->
+                <div class="coming-soon-section">
+                    <div class="coming-soon-icon">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke="url(#gradient-cases)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient-cases" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3100A4"/>
+                                    <stop offset="1" stop-color="#6100FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Use Cases Coming Soon</h3>
+                    <p>We're currently curating detailed use cases showcasing how organizations across industries are transforming their operations with Trust Orchestrator.</p>
+                    <p class="coming-soon-subtitle">In the meantime, explore our platform capabilities or get in touch to discuss your specific needs.</p>
+                    <div class="coming-soon-actions">
+                        <a href="platform.html" class="btn btn-secondary-outline">Explore Platform</a>
+                        <a href="contact.html" class="btn btn-primary">Discuss Your Use Case</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <h3>No use cases found</h3>
+                <p>Try selecting different categories or <a href="contact.html">contact us</a> to discuss your specific needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Industries -->
+    <section class="featured-industries-section">
+        <div class="use-cases-container">
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Trust Orchestrator powers conversational AI across diverse sectors</p>
+            </div>
+
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">🏦</div>
+                    <h3>Banking</h3>
+                    <p>Secure, compliant conversational AI for account management, transactions, and customer support</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">🛡️</div>
+                    <h3>Insurance</h3>
+                    <p>Policy inquiries, claims processing, and customer service automation with regulatory compliance</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">📱</div>
+                    <h3>Telecoms</h3>
+                    <p>Technical support, account management, and service activation automation</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">🏛️</div>
+                    <h3>Government</h3>
+                    <p>Citizen services, information delivery, and administrative process automation</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">⚡</div>
+                    <h3>Utilities</h3>
+                    <p>Billing support, outage reporting, and service request automation for energy and water providers</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">🛢️</div>
+                    <h3>Oil & Gas</h3>
+                    <p>Operations support, safety compliance, and field service automation for energy sector operations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="use-cases-container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Operations?</h2>
+                <p>Let's discuss how Trust Orchestrator can address your specific use cases and deliver measurable results</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Schedule a Consultation</a>
+                    <a href="platform.html" class="btn btn-secondary-outline btn-large">Explore the Platform</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                        <span class="logo-text">Trust Orchestrator</span>
+                    </div>
+                    <p>Powering Conversational AI you can trust</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="platform.html#overview">Overview</a></li>
+                        <li><a href="platform.html#features">Features</a></li>
+                        <li><a href="platform.html#channels">Channels</a></li>
+                        <li><a href="platform.html#modules">Modules</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="academy.html">Academy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="company.html#about">About</a></li>
+                        <li><a href="company.html#team">Executive Team</a></li>
+                        <li><a href="company.html#values">Values</a></li>
+                        <li><a href="company.html#partners">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trust Orchestrator. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="use-cases-script.js"></script>
+</body>
+</html>

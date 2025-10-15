@@ -1,7 +1,29 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:www.cognigy.com)"
+      "Read(//c/**)",
+      "Bash(for file in index.html platform.html company.html trust-studio.html trust-manager.html trust-engine.html channels-voice1.html channels-chat.html channels-agent-assist.html learn-more.html moreabout.html getdetails.html results.html assessment.html contact.html)",
+      "Bash(if [ -f \"$file\" ])",
+      "Bash(for:*)",
+      "Bash(do sed -i 's|index\\.html#blog|blog.html|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#documentation|documentation.html|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#academy|academy.html|g' \"$file\")",
+      "Bash(do sed -i 's|href=\"\"#contact\"\"|href=\"\"contact.html\"\"|g' \"$file\")",
+      "Bash(do sed -i 's|href=\"\"index\\.html#platform\"\"|href=\"\"platform.html\"\"|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#overview|platform.html#overview|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#features|platform.html#features|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#channels|platform.html#channels|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#modules|platform.html#modules|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#architecture|platform.html#architecture|g' \"$file\")",
+      "Bash(do sed -i 's|href=\"\"index\\.html#company\"\"|href=\"\"company.html\"\"|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#about|company.html#about|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#team|company.html#team|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#values|company.html#values|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#partners|company.html#partners|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#privacy|#privacy|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#terms|#terms|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#contact|contact.html|g' \"$file\")",
+      "Bash(do sed -i 's|index\\.html#use-cases|use-cases.html|g' \"$file\")"
     ],
     "deny": [],
     "ask": []

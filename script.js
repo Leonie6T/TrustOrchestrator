@@ -159,16 +159,8 @@ function initFormHandling() {
         }
     });
 
-    // Contact form handling
-    const contactButtons = document.querySelectorAll('.btn');
-    contactButtons.forEach(button => {
-        if (button.textContent.includes('Contact Us')) {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                showContactModal();
-            });
-        }
-    });
+    // Contact Us buttons now redirect to contact.html page
+    // Modal functionality removed - buttons navigate normally
 }
 
 // Modal Functions

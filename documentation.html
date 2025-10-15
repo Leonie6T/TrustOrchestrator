@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Trust Orchestrator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="documentation-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                        <span class="logo-text">Trust Orchestrator</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="platform.html" class="nav-link">Platform</a>
+                        <div class="dropdown-content">
+                            <a href="platform.html#overview">Overview</a>
+                            <a href="platform.html#features">Features</a>
+                            <a href="platform.html#channels">Channels</a>
+                            <a href="platform.html#modules">Modules</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="use-cases.html" class="nav-link">Use Cases</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#resources" class="nav-link active">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="documentation.html">Documentation</a>
+                            <a href="academy.html">Academy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="company.html" class="nav-link">Company</a>
+                        <div class="dropdown-content">
+                            <a href="company.html#about">About</a>
+                            <a href="company.html#team">Executive Team</a>
+                            <a href="company.html#values">Values</a>
+                            <a href="company.html#partners">Partners</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Documentation Hero -->
+    <section class="docs-hero">
+        <div class="docs-hero-content">
+            <h1>Documentation & Resources</h1>
+            <p class="docs-hero-subtitle">Access comprehensive guides, whitepapers, and technical documentation</p>
+
+            <!-- Search Bar -->
+            <div class="docs-search-container">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="docSearch" placeholder="Search documentation...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Content -->
+    <section class="docs-content">
+        <div class="docs-container">
+            <!-- Filters -->
+            <div class="docs-filters">
+                <button class="filter-btn active" data-category="all">All Documents</button>
+                <button class="filter-btn" data-category="guides">Guides</button>
+                <button class="filter-btn" data-category="whitepapers">Whitepapers</button>
+                <button class="filter-btn" data-category="technical">Technical Docs</button>
+                <button class="filter-btn" data-category="case-studies">Case Studies</button>
+            </div>
+
+            <!-- Stats -->
+            <div class="docs-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalDocs">1</span>
+                    <span class="stat-label">Total Documents</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Access Available</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Latest</span>
+                    <span class="stat-label">Always Updated</span>
+                </div>
+            </div>
+
+            <!-- Featured Document -->
+            <div class="featured-doc-section">
+                <span class="section-label">Featured Resource</span>
+                <div class="featured-doc-card" data-category="guides">
+                    <div class="featured-doc-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="url(#gradient-doc)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient-doc" x1="5" y1="3" x2="19" y2="21" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3100A4"/>
+                                    <stop offset="1" stop-color="#6100FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="featured-doc-content">
+                        <div class="doc-badges">
+                            <span class="doc-badge featured">Featured</span>
+                            <span class="doc-badge category">Guide</span>
+                        </div>
+                        <h2 class="featured-doc-title">Conversational AI Trust Benchmark Advisory Guide</h2>
+                        <p class="featured-doc-description">A comprehensive guide to establishing and maintaining trust benchmarks for Conversational AI systems. This advisory document provides frameworks, best practices, and actionable strategies for implementing trustworthy AI agents in enterprise environments.</p>
+                        <div class="doc-meta">
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>January 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="12" y1="18" x2="12" y2="12"></line>
+                                    <line x1="9" y1="15" x2="15" y2="15"></line>
+                                </svg>
+                                <span>PDF • 2.4 MB</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 20h9"></path>
+                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                </svg>
+                                <span>42 pages</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <button class="btn-doc-download">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                Download PDF
+                            </button>
+                            <button class="btn-doc-preview">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Documents Grid -->
+            <div class="docs-grid-section">
+                <h2 class="section-title">All Resources</h2>
+
+                <div class="docs-grid" id="docsGrid">
+                    <!-- More documents can be added here -->
+                    <div class="coming-soon-card">
+                        <div class="coming-soon-icon">📚</div>
+                        <h3>More Resources Coming Soon</h3>
+                        <p>We're continuously adding new documentation, guides, and resources to help you get the most out of Trust Orchestrator.</p>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults">
+                    <div class="no-results-icon">🔍</div>
+                    <h3>No documents found</h3>
+                    <p>Try different keywords or categories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need More Information?</h2>
+                <p>Our team is here to help you understand how Trust Orchestrator can transform your operations</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Contact Us</a>
+                    <a href="platform.html" class="btn btn-secondary-outline btn-large">Explore the Platform</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                        <span class="logo-text">Trust Orchestrator</span>
+                    </div>
+                    <p>Powering Conversational AI you can trust</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="platform.html#overview">Overview</a></li>
+                        <li><a href="platform.html#features">Features</a></li>
+                        <li><a href="platform.html#channels">Channels</a></li>
+                        <li><a href="platform.html#modules">Modules</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="academy.html">Academy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="company.html#about">About</a></li>
+                        <li><a href="company.html#team">Executive Team</a></li>
+                        <li><a href="company.html#values">Values</a></li>
+                        <li><a href="company.html#partners">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trust Orchestrator. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="documentation-script.js"></script>
+</body>
+</html>

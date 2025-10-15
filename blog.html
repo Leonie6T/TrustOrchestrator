@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Trust Orchestrator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                        <span class="logo-text">Trust Orchestrator</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="platform.html" class="nav-link">Platform</a>
+                        <div class="dropdown-content">
+                            <a href="platform.html#overview">Overview</a>
+                            <a href="platform.html#features">Features</a>
+                            <a href="platform.html#channels">Channels</a>
+                            <a href="platform.html#modules">Modules</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="use-cases.html" class="nav-link">Use Cases</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#resources" class="nav-link active">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="documentation.html">Documentation</a>
+                            <a href="academy.html">Academy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="company.html" class="nav-link">Company</a>
+                        <div class="dropdown-content">
+                            <a href="company.html#about">About</a>
+                            <a href="company.html#team">Executive Team</a>
+                            <a href="company.html#values">Values</a>
+                            <a href="company.html#partners">Partners</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="blog-hero-content">
+            <h1>Insights & Perspectives</h1>
+            <p class="blog-hero-subtitle">Exploring the future of Conversational AI and unassisted automation</p>
+
+            <!-- Search Bar -->
+            <div class="blog-search-container">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="blogSearch" placeholder="Search articles...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="blog-container">
+            <!-- Featured Post -->
+            <div class="featured-section">
+                <span class="section-label">Featured Article</span>
+                <article class="featured-post" data-post-id="1" onclick="openPost(1)">
+                    <div class="featured-image-placeholder">
+                        <span class="featured-icon">💬</span>
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-meta">
+                            <span class="featured-badge">Latest</span>
+                            <span class="featured-date">2025</span>
+                            <span class="featured-read-time">• 12 min read</span>
+                        </div>
+                        <h2 class="featured-title">The case for Conversational AI Agents in contact centres</h2>
+                        <p class="featured-excerpt">There is a very strong case building for the adoption of Conversational AI Agents within every contact centre. This paper outlines the key arguments for greater adoption, as well as highlighting challenges being experienced and ways to overcome them.</p>
+                        <button class="btn-read-more" onclick="event.stopPropagation(); openPost(1)">Read Article →</button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid-section">
+
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-post-id="2">
+                    <div class="blog-card-header">
+                        <div class="card-icon">🛠️</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2025</span>
+                            <span class="post-read-time">8 min read</span>
+                        </div>
+                        <h3 class="card-title">The role Conversational AI agents can play in technical support</h3>
+                        <p class="card-excerpt">Very few businesses operating today don't have a customer-facing piece of technology. Discover how AI agents are transforming technical support...</p>
+                        <button class="btn-read-more-card" onclick="openPost(2)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card" data-post-id="3">
+                    <div class="blog-card-header">
+                        <div class="card-icon">🤖</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2025</span>
+                            <span class="post-read-time">10 min read</span>
+                        </div>
+                        <h3 class="card-title">'Agentic Age' transforms customer support</h3>
+                        <p class="card-excerpt">The emergence of Conversational AI agents is poised to bring profound changes to the contact centre industry...</p>
+                        <button class="btn-read-more-card" onclick="openPost(3)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card" data-post-id="4">
+                    <div class="blog-card-header">
+                        <div class="card-icon">📞</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">7 min read</span>
+                        </div>
+                        <h3 class="card-title">Can AI Agents Play An Effective Role In Outbound Sales?</h3>
+                        <p class="card-excerpt">Ask most people how they feel about getting a sales call and they'll tell you how annoying it is. But what if AI could change that?</p>
+                        <button class="btn-read-more-card" onclick="openPost(4)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card" data-post-id="5">
+                    <div class="blog-card-header">
+                        <div class="card-icon">🏛️</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">9 min read</span>
+                        </div>
+                        <h3 class="card-title">Could Conversational AI Agents make dealing with government departments a pleasure?</h3>
+                        <p class="card-excerpt">For millions of citizens, there are few things more frustrating than dealing with a government department or state-owned enterprise...</p>
+                        <button class="btn-read-more-card" onclick="openPost(5)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card" data-post-id="6">
+                    <div class="blog-card-header">
+                        <div class="card-icon">🛍️</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">6 min read</span>
+                        </div>
+                        <h3 class="card-title">How to reap the rewards of Black Friday while avoiding customer service pitfalls</h3>
+                        <p class="card-excerpt">Black Friday remains a logistical feat for retailers. Learn how AI agents can help manage the massive influx of queries...</p>
+                        <button class="btn-read-more-card" onclick="openPost(6)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-card" data-post-id="7">
+                    <div class="blog-card-header">
+                        <div class="card-icon">🎯</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">7 min read</span>
+                        </div>
+                        <h3 class="card-title">Want To Try Automating With Voice Bots? Identify The Low-Hanging Fruit First</h3>
+                        <p class="card-excerpt">Adopting voice agents makes a lot of sense for companies with high and varying call volumes. Here's where to start...</p>
+                        <button class="btn-read-more-card" onclick="openPost(7)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-card" data-post-id="8">
+                    <div class="blog-card-header">
+                        <div class="card-icon">✨</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">8 min read</span>
+                        </div>
+                        <h3 class="card-title">Conversational AI agents can help nail hyper-personalisation</h3>
+                        <p class="card-excerpt">Despite being the coal face of business-consumer contact, call centers have long struggled to offer personal customer experience...</p>
+                        <button class="btn-read-more-card" onclick="openPost(8)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-card" data-post-id="9">
+                    <div class="blog-card-header">
+                        <div class="card-icon">🎤</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">9 min read</span>
+                        </div>
+                        <h3 class="card-title">Voice-powered AI fast becoming an indispensable business tool</h3>
+                        <p class="card-excerpt">For decades, voice-powered AI seemed like science fiction. Here in 2025, it's not just a reality but an increasingly valuable business tool...</p>
+                        <button class="btn-read-more-card" onclick="openPost(9)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 10 -->
+                <article class="blog-card" data-post-id="10">
+                    <div class="blog-card-header">
+                        <div class="card-icon">⚡</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">7 min read</span>
+                        </div>
+                        <h3 class="card-title">Contact centres must embrace generative AI or risk being left behind</h3>
+                        <p class="card-excerpt">It took just two months for ChatGPT to reach 100 million users. Learn why contact centres need to act now...</p>
+                        <button class="btn-read-more-card" onclick="openPost(10)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 11 -->
+                <article class="blog-card" data-post-id="11">
+                    <div class="blog-card-header">
+                        <div class="card-icon">🌍</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">6 min read</span>
+                        </div>
+                        <h3 class="card-title">Could AI change how contact centres approach multilingual support?</h3>
+                        <p class="card-excerpt">Phone your bank's contact centre and see how many language options you get. AI is transforming multilingual support...</p>
+                        <button class="btn-read-more-card" onclick="openPost(11)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 12 -->
+                <article class="blog-card" data-post-id="12">
+                    <div class="blog-card-header">
+                        <div class="card-icon">💬</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">5 min read</span>
+                        </div>
+                        <h3 class="card-title">Talking to chatbots sucks – but it doesn't have to</h3>
+                        <p class="card-excerpt">Most chatbots suck. For years, industry mavens promised they would transform customer service. Here's how to make them actually work...</p>
+                        <button class="btn-read-more-card" onclick="openPost(12)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 13 -->
+                <article class="blog-card" data-post-id="13">
+                    <div class="blog-card-header">
+                        <div class="card-icon">⏰</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024</span>
+                            <span class="post-read-time">6 min read</span>
+                        </div>
+                        <h3 class="card-title">Is your business taking the wrong approach to urgent customer conversations?</h3>
+                        <p class="card-excerpt">Urgent customer conversations are critical in most businesses. Learn the right approach to handling them at scale...</p>
+                        <button class="btn-read-more-card" onclick="openPost(13)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 14 -->
+                <article class="blog-card" data-post-id="14">
+                    <div class="blog-card-header">
+                        <div class="card-icon">💳</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2023</span>
+                            <span class="post-read-time">7 min read</span>
+                        </div>
+                        <h3 class="card-title">Could Automating Debt Conversations Help Businesses Bolster Their Bottom Lines?</h3>
+                        <p class="card-excerpt">A customer-centric approach backed by automation can result in better collection rates at a lower cost...</p>
+                        <button class="btn-read-more-card" onclick="openPost(14)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 15 -->
+                <article class="blog-card" data-post-id="15">
+                    <div class="blog-card-header">
+                        <div class="card-icon">🔄</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2023</span>
+                            <span class="post-read-time">6 min read</span>
+                        </div>
+                        <h3 class="card-title">Repetitive conversations don't have to be expensive</h3>
+                        <p class="card-excerpt">In any contact centre, there are some calls that boil down to saying the same thing over and over again. Here's how to fix that...</p>
+                        <button class="btn-read-more-card" onclick="openPost(15)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 16 -->
+                <article class="blog-card" data-post-id="16">
+                    <div class="blog-card-header">
+                        <div class="card-icon">🌐</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2023</span>
+                            <span class="post-read-time">9 min read</span>
+                        </div>
+                        <h3 class="card-title">How AI agents are being used across the globe – and why businesses should care</h3>
+                        <p class="card-excerpt">From South Africa to Korea, discover how businesses worldwide are leveraging AI agents to transform customer service...</p>
+                        <button class="btn-read-more-card" onclick="openPost(16)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 17 -->
+                <article class="blog-card" data-post-id="17">
+                    <div class="blog-card-header">
+                        <div class="card-icon">⏱️</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2023</span>
+                            <span class="post-read-time">5 min read</span>
+                        </div>
+                        <h3 class="card-title">Prevent conversations sucking up time and productivity</h3>
+                        <p class="card-excerpt">Repetitive internal conversations have a cost. Learn how automation can improve productivity and save time...</p>
+                        <button class="btn-read-more-card" onclick="openPost(17)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 18 -->
+                <article class="blog-card" data-post-id="18">
+                    <div class="blog-card-header">
+                        <div class="card-icon">😊</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2023</span>
+                            <span class="post-read-time">6 min read</span>
+                        </div>
+                        <h3 class="card-title">What if you could speak to an AI you actually like?</h3>
+                        <p class="card-excerpt">Discover how Conversational AI Agents are turning frustrating upgrade processes into pleasant experiences...</p>
+                        <button class="btn-read-more-card" onclick="openPost(18)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 19 -->
+                <article class="blog-card" data-post-id="19">
+                    <div class="blog-card-header">
+                        <div class="card-icon">😌</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2023</span>
+                            <span class="post-read-time">6 min read</span>
+                        </div>
+                        <h3 class="card-title">How to get happier customers and contact centre workers</h3>
+                        <p class="card-excerpt">Mental health is a major concern in contact centres. Learn how AI agents can reduce stress for both customers and workers...</p>
+                        <button class="btn-read-more-card" onclick="openPost(19)">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Post 20 -->
+                <article class="blog-card" data-post-id="20">
+                    <div class="blog-card-header">
+                        <div class="card-icon">📡</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="post-meta">
+                            <span class="post-date">2023</span>
+                            <span class="post-read-time">5 min read</span>
+                        </div>
+                        <h3 class="card-title">AI agents help contact centres deal with unreachable customers</h3>
+                        <p class="card-excerpt">Load-shedding and connectivity issues make reaching customers difficult. Discover how AI agents can overcome these challenges...</p>
+                        <button class="btn-read-more-card" onclick="openPost(20)">Read More →</button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults">
+                <div class="no-results-icon">🔍</div>
+                <h3>No articles found</h3>
+                <p>Try searching with different keywords</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Customer Conversations?</h2>
+                <p>Discover how Trust Orchestrator can help you achieve true unassisted automation</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Contact Us</a>
+                    <a href="platform.html" class="btn btn-secondary-outline btn-large">Explore the Platform</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="Trust Orchestrator" class="logo">
+                        <span class="logo-text">Trust Orchestrator</span>
+                    </div>
+                    <p>Powering Conversational AI you can trust</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="platform.html#overview">Overview</a></li>
+                        <li><a href="platform.html#features">Features</a></li>
+                        <li><a href="platform.html#channels">Channels</a></li>
+                        <li><a href="platform.html#modules">Modules</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="academy.html">Academy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="company.html#about">About</a></li>
+                        <li><a href="company.html#team">Executive Team</a></li>
+                        <li><a href="company.html#values">Values</a></li>
+                        <li><a href="company.html#partners">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trust Orchestrator. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog-script.js"></script>
+</body>
+</html>
