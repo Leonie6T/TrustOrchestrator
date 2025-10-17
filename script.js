@@ -660,7 +660,7 @@ function handleAssessmentSubmission() {
     const answers = {};
     
     // Collect all answers
-    for (let i = 1; i <= 17; i++) {
+    for (let i = 1; i <= 18; i++) {
         const questionName = `q${i}`;
         const selectedValue = formData.get(questionName);
         if (selectedValue) {
@@ -669,7 +669,7 @@ function handleAssessmentSubmission() {
     }
 
     // Check if all questions are answered
-    const totalQuestions = 17;
+    const totalQuestions = 18;
     const answeredQuestions = Object.keys(answers).length;
     
     if (answeredQuestions < totalQuestions) {
