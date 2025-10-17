@@ -1452,6 +1452,43 @@
     padding: 2rem;
 }
 
+/* Module Icon Styling */
+.module-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.icon-symbol {
+    font-size: 8rem;
+    line-height: 1;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.module-card:hover .icon-symbol {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: drop-shadow(0 8px 16px rgba(97, 0, 255, 0.2));
+}
+
+/* Responsive icon sizing */
+@media (max-width: 768px) {
+    .icon-symbol {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-symbol {
+        font-size: 4rem;
+    }
+}
+
 /* Trust Studio Visual - Rules/Decision Tree */
 .logic-nodes {
     position: relative;
