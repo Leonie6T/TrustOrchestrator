@@ -6,7 +6,7 @@
     <title>Platform - Trust Orchestrator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="platform-styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -27,13 +27,14 @@
                             <a href="platform.html#features">Features</a>
                             <a href="platform.html#channels">Channels</a>
                             <a href="platform.html#modules">Modules</a>
+                            <a href="platform.html#architecture">Architecture</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a href="use-cases.html" class="nav-link">Use Cases</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="index.html#resources" class="nav-link">Resources</a>
+                        <a href="blog.html" class="nav-link">Resources</a>
                         <div class="dropdown-content">
                             <a href="blog.html">Blog</a>
                             <a href="documentation.html">Documentation</a>
@@ -473,6 +474,716 @@
         </div>
     </section>
 
+    <!-- Architecture -->
+    <section id="architecture" class="section platform-architecture-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Architecture</div>
+                <h2>Enterprise-Grade Architecture</h2>
+                <p>Built for scale, security, and reliability with flexible deployment options that meet your infrastructure requirements. Trust Orchestrator is designed to be agnostic of channel and system, controlling the flow of every conversation across all channels while keeping detailed records of everything that is said or done.</p>
+            </div>
+
+            <!-- Channel Integration -->
+            <div class="architecture-subsection channel-integration-section">
+                <div class="subsection-header">
+                    <h3>Works Within Existing CX Stacks</h3>
+                    <p>Trust Orchestrator integrates seamlessly with existing customer experience (CX) stacks, ensuring consistent and compliant conversations across both voice and chat environments</p>
+                </div>
+
+                <div class="channel-grid">
+                    <div class="channel-card">
+                        <div class="channel-header">
+                            <div class="channel-icon">💬</div>
+                            <h4>Chat Channels</h4>
+                        </div>
+                        <div class="channel-details">
+                            <p>Seamless integration with existing chat platforms and messaging systems, maintaining conversation context and compliance across all digital touchpoints.</p>
+                            <div class="channel-features">
+                                <span class="channel-feature">Multi-platform support</span>
+                                <span class="channel-feature">Context preservation</span>
+                                <span class="channel-feature">Real-time processing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-header">
+                            <div class="channel-icon">🎤</div>
+                            <h4>Voice Channels</h4>
+                        </div>
+                        <div class="channel-details">
+                            <p>Full integration with voice systems and telephony infrastructure, ensuring consistent conversation management across all voice interactions.</p>
+                            <div class="channel-features">
+                                <span class="channel-feature">Telephony integration</span>
+                                <span class="channel-feature">Voice processing</span>
+                                <span class="channel-feature">Call management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="integration-note">
+                    <div class="note-icon">🔗</div>
+                    <p><strong>Channel Agnostic:</strong> Trust Orchestrator is designed to be agnostic of channel and system, controlling the flow of every conversation across all channels while keeping detailed records of everything that is said or done.</p>
+                </div>
+            </div>
+
+            <!-- Development Environments -->
+            <div class="architecture-subsection">
+                <div class="subsection-header">
+                    <h3>Streamlined Journey Development</h3>
+                    <p>Our structured three-environment approach ensures every journey is rigorously tested and validated before going live</p>
+                </div>
+
+                <div class="environment-flow">
+                    <div class="environment-card development">
+                        <div class="env-step-number">01</div>
+                        <div class="env-icon">🛠️</div>
+                        <h4>Development Environment</h4>
+                        <p>The foundation stage where journeys and SME logic are designed, tested, and refined. This is where innovation happens, ensuring each build is solid from the start.</p>
+                        <div class="env-features">
+                            <span class="env-feature">Design & Build</span>
+                            <span class="env-feature">Initial Testing</span>
+                            <span class="env-feature">Iteration</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-connector">
+                        <div class="flow-line"></div>
+                        <div class="flow-arrow">→</div>
+                    </div>
+
+                    <div class="environment-card qa">
+                        <div class="env-step-number">02</div>
+                        <div class="env-icon">🔍</div>
+                        <h4>Quality Assurance Environment</h4>
+                        <p>A near-identical replica of production used for robust testing and validation. Here, journeys undergo rigorous quality checks before final approval.</p>
+                        <div class="env-features">
+                            <span class="env-feature">Rigorous Testing</span>
+                            <span class="env-feature">Validation</span>
+                            <span class="env-feature">Quality Checks</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-connector">
+                        <div class="flow-line"></div>
+                        <div class="flow-arrow">→</div>
+                    </div>
+
+                    <div class="environment-card production">
+                        <div class="env-step-number">03</div>
+                        <div class="env-icon">🚀</div>
+                        <h4>Production Environment</h4>
+                        <p>The live environment where customers interact with journeys and SMEs. By the time journeys reach this stage, they have been optimized for performance and reliability.</p>
+                        <div class="env-features">
+                            <span class="env-feature">Live Deployment</span>
+                            <span class="env-feature">Customer Interaction</span>
+                            <span class="env-feature">Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hosting Options -->
+            <div class="architecture-subsection hosting-section">
+                <div class="subsection-header">
+                    <h3>Flexible Hosting Options</h3>
+                    <p>Flexible hosting and deployment to meet enterprise IT and compliance needs. Supported on Kubernetes, virtual machines, or managed container services with on-premise or private cloud hosting options.</p>
+                </div>
+
+                <div class="hosting-options">
+                    <div class="hosting-card on-premise">
+                        <div class="hosting-header">
+                            <div class="hosting-icon">🏢</div>
+                            <div class="hosting-badge">On-Premise</div>
+                        </div>
+                        <h4>On-Premise Deployment</h4>
+                        <p>IT infrastructure, servers, and software physically located and operated within your own facilities.</p>
+                        <div class="hosting-details">
+                            <h5>Key Features:</h5>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <div class="feature-icon">🏢</div>
+                                    <span>Complete control over systems and data</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">🌐</div>
+                                    <span>No dependency on external connectivity</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">⚙️</div>
+                                    <span>Custom infrastructure configurations</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">🔧</div>
+                                    <span>Full operational control and maintenance</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-cta">
+                            <span class="hosting-suitable">Ideal for: Highly regulated industries</span>
+                        </div>
+                    </div>
+
+                    <div class="hosting-card byoc">
+                        <div class="hosting-header">
+                            <div class="hosting-icon">☁️</div>
+                            <div class="hosting-badge">Cloud</div>
+                        </div>
+                        <h4>Bring Your Own Cloud (BYOC)</h4>
+                        <p>Use your existing cloud infrastructure (Azure preferred) to host and run services.</p>
+                        <div class="hosting-details">
+                            <h5>Key Features:</h5>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <div class="feature-icon">🎛️</div>
+                                    <span>Maintain control over your chosen cloud environment</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">💰</div>
+                                    <span>Leverage existing cloud investments</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">📈</div>
+                                    <span>Flexible scaling and resource management</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">☁️</div>
+                                    <span>Cloud-native infrastructure and services</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-cta">
+                            <span class="hosting-suitable">Ideal for: Modern cloud-first organizations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hyperscaler Deployments -->
+                <div class="hyperscaler-section">
+                    <div class="hyperscaler-header">
+                        <h4>Hyperscaler Deployments</h4>
+                        <p>For enterprises scaling in the cloud, Trust Orchestrator integrates with leading hyperscalers:</p>
+                    </div>
+                    
+                    <div class="hyperscaler-grid">
+                        <div class="hyperscaler-card azure">
+                            <div class="hyperscaler-logo">
+                                <img src="assets/Azure.png" alt="Microsoft Azure" class="cloud-logo">
+                            </div>
+                            <h5>Microsoft Azure</h5>
+                            <p>Native Azure integration with full platform support</p>
+                        </div>
+                        
+                        <div class="hyperscaler-card aws">
+                            <div class="hyperscaler-logo">
+                                <img src="assets/aws.webp" alt="Amazon Web Services" class="cloud-logo">
+                            </div>
+                            <h5>Amazon Web Services</h5>
+                            <p>Comprehensive AWS ecosystem integration</p>
+                        </div>
+                        
+                        <div class="hyperscaler-card gcp">
+                            <div class="hyperscaler-logo">
+                                <img src="assets/Googlecloud.png" alt="Google Cloud Platform" class="cloud-logo">
+                            </div>
+                            <h5>Google Cloud Platform</h5>
+                            <p>Via Kubernetes and specialist infrastructure partners</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hyperscaler-note">
+                        <p><strong>Note:</strong> Google Cloud Platform integration via Kubernetes and may require specialist infrastructure partners.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security & Compliance Architecture -->
+            <div class="architecture-subsection security-section">
+                <div class="subsection-header">
+                    <h3>Security & Compliance Architecture</h3>
+                    <p>Trust Orchestrator is designed with security and compliance top of mind, aligning with best-in-class standards to help organizations prove trust before customers even ask — following practices similar to those used by Vanta and Cognigy's Trust Center.</p>
+                </div>
+
+                <div class="security-grid">
+                    <div class="security-card">
+                        <div class="security-header">
+                            <div class="security-icon">🔐</div>
+                            <h4>Data Protection & Encryption</h4>
+                        </div>
+                        <div class="security-details">
+                            <div class="security-feature">
+                                <span class="feature-label">Data Encryption:</span>
+                                <span class="feature-value">In transit and at rest encryption</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">PII Redaction:</span>
+                                <span class="feature-value">Automatic personal data protection</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Anonymization:</span>
+                                <span class="feature-value">Data anonymization options available</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Data Residency:</span>
+                                <span class="feature-value">Flexible hosting and deployment options</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="security-card">
+                        <div class="security-header">
+                            <div class="security-icon">🛡️</div>
+                            <h4>Access Control & Authentication</h4>
+                        </div>
+                        <div class="security-details">
+                            <div class="security-feature">
+                                <span class="feature-label">Role-Based Access:</span>
+                                <span class="feature-value">Role-based access control (RBAC)</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Audit Logging:</span>
+                                <span class="feature-value">Comprehensive audit logging</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Identity Management:</span>
+                                <span class="feature-value">Enterprise identity integration</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Access Controls:</span>
+                                <span class="feature-value">Granular permission management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="security-card">
+                        <div class="security-header">
+                            <div class="security-icon">📋</div>
+                            <h4>Compliance Frameworks</h4>
+                        </div>
+                        <div class="security-details">
+                            <div class="security-feature">
+                                <span class="feature-label">GDPR Alignment:</span>
+                                <span class="feature-value">Full GDPR compliance and alignment</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">POPIA Alignment:</span>
+                                <span class="feature-value">South African data protection compliance</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Trust Standards:</span>
+                                <span class="feature-value">Best-in-class standards alignment</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Industry Frameworks:</span>
+                                <span class="feature-value">Vanta and Cognigy Trust Center practices</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="security-card">
+                        <div class="security-header">
+                            <div class="security-icon">🔍</div>
+                            <h4>Security Monitoring & Incident Response</h4>
+                        </div>
+                        <div class="security-details">
+                            <div class="security-feature">
+                                <span class="feature-label">SIEM Integration:</span>
+                                <span class="feature-value">[PLACEHOLDER: Security event monitoring details]</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Threat Detection:</span>
+                                <span class="feature-value">[PLACEHOLDER: Real-time threat monitoring capabilities]</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Incident Response:</span>
+                                <span class="feature-value">[PLACEHOLDER: Response procedures and SLAs]</span>
+                            </div>
+                            <div class="security-feature">
+                                <span class="feature-label">Vulnerability Management:</span>
+                                <span class="feature-value">[PLACEHOLDER: Regular security assessments and patching]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Architecture Diagram Placeholder -->
+                <div class="security-diagram-placeholder">
+                    <div class="diagram-header">
+                        <h4>Security Architecture Overview</h4>
+                        <p>[PLACEHOLDER: Security architecture diagram showing network segmentation, security zones, and data flow]</p>
+                    </div>
+                    <div class="diagram-content">
+                        <div class="diagram-placeholder">
+                            <div class="placeholder-icon">🏗️</div>
+                            <p><strong>Required Image:</strong> Comprehensive security architecture diagram showing:</p>
+                            <ul>
+                                <li>Network segmentation and security zones</li>
+                                <li>Data encryption points and key management</li>
+                                <li>Access control layers and authentication flows</li>
+                                <li>Monitoring and logging infrastructure</li>
+                                <li>Compliance checkpoints and audit trails</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Disaster Recovery & Business Continuity -->
+            <div class="architecture-subsection dr-bc-section">
+                <div class="subsection-header">
+                    <h3>Disaster Recovery & Business Continuity</h3>
+                    <p>Comprehensive resilience strategies ensuring continuous operations and data protection</p>
+                </div>
+
+                <div class="dr-bc-grid">
+                    <div class="dr-card">
+                        <div class="dr-header">
+                            <div class="dr-icon">🔄</div>
+                            <h4>Backup & Recovery</h4>
+                        </div>
+                        <div class="dr-details">
+                            <div class="dr-metric">
+                                <span class="metric-label">RTO (Recovery Time Objective):</span>
+                                <span class="metric-value">[PLACEHOLDER: Target recovery time]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">RPO (Recovery Point Objective):</span>
+                                <span class="metric-value">[PLACEHOLDER: Maximum data loss tolerance]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Backup Frequency:</span>
+                                <span class="metric-value">[PLACEHOLDER: Backup schedule details]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Retention Policy:</span>
+                                <span class="metric-value">[PLACEHOLDER: Data retention requirements]</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dr-card">
+                        <div class="dr-header">
+                            <div class="dr-icon">🌐</div>
+                            <h4>High Availability</h4>
+                        </div>
+                        <div class="dr-details">
+                            <div class="dr-metric">
+                                <span class="metric-label">Uptime SLA:</span>
+                                <span class="metric-value">[PLACEHOLDER: Service availability target]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Load Balancing:</span>
+                                <span class="metric-value">[PLACEHOLDER: HA configuration details]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Failover Time:</span>
+                                <span class="metric-value">[PLACEHOLDER: Automatic failover capabilities]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Multi-Region Support:</span>
+                                <span class="metric-value">[PLACEHOLDER: Geographic redundancy options]</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dr-card">
+                        <div class="dr-header">
+                            <div class="dr-icon">📊</div>
+                            <h4>Monitoring & Alerting</h4>
+                        </div>
+                        <div class="dr-details">
+                            <div class="dr-metric">
+                                <span class="metric-label">Health Monitoring:</span>
+                                <span class="metric-value">[PLACEHOLDER: System health checks and metrics]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Alert Channels:</span>
+                                <span class="metric-value">[PLACEHOLDER: Notification methods and escalation]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Response Time:</span>
+                                <span class="metric-value">[PLACEHOLDER: Incident response SLAs]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Escalation Procedures:</span>
+                                <span class="metric-value">[PLACEHOLDER: Incident management process]</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dr-card">
+                        <div class="dr-header">
+                            <div class="dr-icon">🧪</div>
+                            <h4>Testing & Validation</h4>
+                        </div>
+                        <div class="dr-details">
+                            <div class="dr-metric">
+                                <span class="metric-label">DR Testing Schedule:</span>
+                                <span class="metric-value">[PLACEHOLDER: Regular testing frequency]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Test Scenarios:</span>
+                                <span class="metric-value">[PLACEHOLDER: Disaster simulation types]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Validation Process:</span>
+                                <span class="metric-value">[PLACEHOLDER: Recovery validation procedures]</span>
+                            </div>
+                            <div class="dr-metric">
+                                <span class="metric-label">Documentation:</span>
+                                <span class="metric-value">[PLACEHOLDER: Runbook and procedure documentation]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DR Architecture Diagram Placeholder -->
+                <div class="dr-diagram-placeholder">
+                    <div class="diagram-header">
+                        <h4>Disaster Recovery Architecture</h4>
+                        <p>[PLACEHOLDER: DR architecture diagram showing primary/secondary sites, data replication, and failover mechanisms]</p>
+                    </div>
+                    <div class="diagram-content">
+                        <div class="diagram-placeholder">
+                            <div class="placeholder-icon">🔄</div>
+                            <p><strong>Required Image:</strong> Disaster recovery architecture diagram showing:</p>
+                            <ul>
+                                <li>Primary and secondary data centers</li>
+                                <li>Data replication and synchronization flows</li>
+                                <li>Failover and failback procedures</li>
+                                <li>Network connectivity and routing</li>
+                                <li>Monitoring and alerting infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance & Scalability -->
+            <div class="architecture-subsection performance-section">
+                <div class="subsection-header">
+                    <h3>Performance & Scalability</h3>
+                    <p>Enterprise-grade performance metrics and scaling capabilities for high-volume operations</p>
+                </div>
+
+                <div class="performance-grid">
+                    <div class="performance-card">
+                        <div class="performance-header">
+                            <div class="performance-icon">⚡</div>
+                            <h4>Performance Metrics</h4>
+                        </div>
+                        <div class="performance-details">
+                            <div class="performance-metric">
+                                <span class="metric-label">Response Time:</span>
+                                <span class="metric-value">[PLACEHOLDER: Average and 95th percentile response times]</span>
+                            </div>
+                            <div class="performance-metric">
+                                <span class="metric-label">Throughput:</span>
+                                <span class="metric-value">[PLACEHOLDER: Requests per second capacity]</span>
+                            </div>
+                            <div class="performance-metric">
+                                <span class="metric-label">Concurrent Users:</span>
+                                <span class="metric-value">[PLACEHOLDER: Maximum supported concurrent sessions]</span>
+                            </div>
+                            <div class="performance-metric">
+                                <span class="metric-label">Latency:</span>
+                                <span class="metric-value">[PLACEHOLDER: End-to-end latency measurements]</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="performance-card">
+                        <div class="performance-header">
+                            <div class="performance-icon">📈</div>
+                            <h4>Scalability</h4>
+                        </div>
+                        <div class="performance-details">
+                            <div class="performance-metric">
+                                <span class="metric-label">Auto-scaling:</span>
+                                <span class="metric-value">[PLACEHOLDER: Horizontal scaling capabilities]</span>
+                            </div>
+                            <div class="performance-metric">
+                                <span class="metric-label">Load Distribution:</span>
+                                <span class="metric-value">[PLACEHOLDER: Load balancing and distribution methods]</span>
+                            </div>
+                            <div class="performance-metric">
+                                <span class="metric-label">Resource Limits:</span>
+                                <span class="metric-value">[PLACEHOLDER: CPU, memory, and storage scaling limits]</span>
+                            </div>
+                            <div class="performance-metric">
+                                <span class="metric-label">Geographic Scaling:</span>
+                                <span class="metric-value">[PLACEHOLDER: Multi-region deployment capabilities]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Integration Architecture -->
+            <div class="architecture-subsection integration-section">
+                <div class="subsection-header">
+                    <h3>System Integration & APIs</h3>
+                    <p>Comprehensive integration capabilities for enterprise system connectivity</p>
+                </div>
+
+                <div class="integration-grid">
+                    <div class="integration-card">
+                        <div class="integration-header">
+                            <div class="integration-icon">🔌</div>
+                            <h4>API Architecture</h4>
+                        </div>
+                        <div class="integration-details">
+                            <div class="integration-feature">
+                                <span class="feature-label">REST API:</span>
+                                <span class="feature-value">[PLACEHOLDER: RESTful API specifications and versioning]</span>
+                            </div>
+                            <div class="integration-feature">
+                                <span class="feature-label">GraphQL:</span>
+                                <span class="feature-value">[PLACEHOLDER: GraphQL endpoint capabilities]</span>
+                            </div>
+                            <div class="integration-feature">
+                                <span class="feature-label">Webhooks:</span>
+                                <span class="feature-value">[PLACEHOLDER: Real-time event notification system]</span>
+                            </div>
+                            <div class="integration-feature">
+                                <span class="feature-label">Rate Limiting:</span>
+                                <span class="feature-value">[PLACEHOLDER: API throttling and usage controls]</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="integration-card">
+                        <div class="integration-header">
+                            <div class="integration-icon">🔗</div>
+                            <h4>Enterprise Integrations</h4>
+                        </div>
+                        <div class="integration-details">
+                            <div class="integration-feature">
+                                <span class="feature-label">CRM Systems:</span>
+                                <span class="feature-value">[PLACEHOLDER: Salesforce, HubSpot, etc. integration details]</span>
+                            </div>
+                            <div class="integration-feature">
+                                <span class="feature-label">ERP Systems:</span>
+                                <span class="feature-value">[PLACEHOLDER: SAP, Oracle, etc. connectivity options]</span>
+                            </div>
+                            <div class="integration-feature">
+                                <span class="feature-label">Legacy Systems:</span>
+                                <span class="feature-value">[PLACEHOLDER: Mainframe and legacy system integration]</span>
+                            </div>
+                            <div class="integration-feature">
+                                <span class="feature-label">Data Warehouses:</span>
+                                <span class="feature-value">[PLACEHOLDER: Data lake and warehouse connectivity]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integration Architecture Diagram Placeholder -->
+                <div class="integration-diagram-placeholder">
+                    <div class="diagram-header">
+                        <h4>System Integration Architecture</h4>
+                        <p>[PLACEHOLDER: Integration architecture diagram showing API gateways, connectors, and data flows]</p>
+                    </div>
+                    <div class="diagram-content">
+                        <div class="diagram-placeholder">
+                            <div class="placeholder-icon">🔗</div>
+                            <p><strong>Required Image:</strong> System integration architecture diagram showing:</p>
+                            <ul>
+                                <li>API gateway and management layer</li>
+                                <li>Enterprise system connectors and adapters</li>
+                                <li>Data transformation and mapping processes</li>
+                                <li>Authentication and authorization flows</li>
+                                <li>Message queuing and event streaming</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deployment & Operations -->
+            <div class="architecture-subsection deployment-section">
+                <div class="subsection-header">
+                    <h3>Deployment & Operations</h3>
+                    <p>Flexible deployment and operational procedures designed to meet enterprise IT and compliance needs</p>
+                </div>
+
+                <div class="deployment-options">
+                    <div class="deployment-card">
+                        <div class="deployment-header">
+                            <div class="deployment-icon">🐳</div>
+                            <h4>Containerized Deployment</h4>
+                        </div>
+                        <div class="deployment-details">
+                            <p>Trust Orchestrator supports containerized deployment using Docker and Kubernetes, providing flexibility and scalability for enterprise environments.</p>
+                            <div class="deployment-features">
+                                <span class="deployment-feature">Docker Support</span>
+                                <span class="deployment-feature">Kubernetes Orchestration</span>
+                                <span class="deployment-feature">Container Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="deployment-card">
+                        <div class="deployment-header">
+                            <div class="deployment-icon">🖥️</div>
+                            <h4>Virtual Machine Deployment</h4>
+                        </div>
+                        <div class="deployment-details">
+                            <p>Traditional virtual machine deployment options for organizations preferring established VM-based infrastructure and management practices.</p>
+                            <div class="deployment-features">
+                                <span class="deployment-feature">VM Support</span>
+                                <span class="deployment-feature">Managed Services</span>
+                                <span class="deployment-feature">Infrastructure Flexibility</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ongoing Operations & Maintenance -->
+                <div class="operations-section">
+                    <div class="operations-header">
+                        <h4>Ongoing Operations & Maintenance</h4>
+                        <p>Proactive maintenance ensuring systems remain secure, stable, and compliant</p>
+                    </div>
+
+                    <div class="maintenance-content">
+                        <div class="maintenance-card">
+                            <div class="maintenance-icon">🛡️</div>
+                            <h4>Monthly OS & Security Patches</h4>
+                            <p>Critical for maintaining a secure and stable IT environment. These patches address known vulnerabilities, fix bugs, and ensure compliance with security standards.</p>
+                            <div class="maintenance-details">
+                                <h5>Benefits:</h5>
+                                <ul>
+                                    <li>Reduces risk of exploitation by attackers</li>
+                                    <li>Fixes bugs and performance issues</li>
+                                    <li>Ensures compliance with regulations</li>
+                                    <li>Minimizes downtime from preventable incidents</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="maintenance-card">
+                            <div class="maintenance-icon">📋</div>
+                            <h4>Maintenance Contracts</h4>
+                            <p>For clients with maintenance agreements, we conduct server operating system security patching monthly at the beginning of each month as agreed.</p>
+                            <div class="maintenance-details">
+                                <h5>Coverage:</h5>
+                                <ul>
+                                    <li>Monthly security patching</li>
+                                    <li>System monitoring and maintenance</li>
+                                    <li>Proactive issue resolution</li>
+                                    <li>Coordinated maintenance windows</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="section cta-section">
         <div class="container">
@@ -481,7 +1192,7 @@
                 <p>Experience how Trust Orchestrator can transform your conversational AI capabilities</p>
                 <div class="cta-buttons">
                     <button class="btn btn-primary btn-large">Book a demo</button>
-                    <button class="btn btn-secondary-outline btn-large">Explore use cases</button>
+                    <a href="use-cases.html" class="btn btn-secondary-outline btn-large">Explore use cases</a>
                 </div>
             </div>
         </div>
@@ -506,6 +1217,7 @@
                         <li><a href="platform.html#features">Features</a></li>
                         <li><a href="platform.html#channels">Channels</a></li>
                         <li><a href="platform.html#modules">Modules</a></li>
+                        <li><a href="platform.html#architecture">Architecture</a></li>
                     </ul>
                 </div>
 
@@ -541,5 +1253,26 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Architecture section deployment tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const deploymentTabs = document.querySelectorAll('.deployment-tab');
+            const deploymentOptions = document.querySelectorAll('.deployment-option');
+
+            deploymentTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetDeployment = this.getAttribute('data-deployment');
+                    
+                    // Remove active class from all tabs and options
+                    deploymentTabs.forEach(t => t.classList.remove('active'));
+                    deploymentOptions.forEach(option => option.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and corresponding option
+                    this.classList.add('active');
+                    document.getElementById(targetDeployment + '-deployment').classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

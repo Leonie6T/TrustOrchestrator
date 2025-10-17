@@ -273,6 +273,9 @@ p {
     margin-top: 80px;
     position: relative;
     overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
 }
 
 .hero::before {
@@ -291,6 +294,7 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    width: 100%;
 }
 
 .hero-title {
@@ -3721,6 +3725,7 @@ p {
 
     .hero {
         padding: 100px 0 60px;
+        min-height: 500px;
     }
 
     .section {
