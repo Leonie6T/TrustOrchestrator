@@ -881,11 +881,29 @@
     text-align: center;
 }
 
-.awards-showcase {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+
+/* Recognition Marquee */
+.recognition-marquee {
+    position: relative;
+    overflow: hidden;
     margin-top: 3rem;
+}
+
+.awards-track {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    width: max-content; /* allow content to define width for smooth scroll */
+    animation: awards-scroll 35s linear infinite;
+}
+
+.awards-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes awards-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 .award-item {
@@ -893,6 +911,7 @@
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
+    flex: 0 0 320px; /* fixed width for consistent scrolling cards */
 }
 
 .award-icon {
@@ -1016,8 +1035,9 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .awards-showcase {
-        grid-template-columns: 1fr;
+    .awards-track {
+        gap: 1rem;
+        animation-duration: 30s;
     }
 }
 
