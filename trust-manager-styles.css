@@ -416,14 +416,8 @@
 }
 
 .analytics-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.analytics-text {
-    max-width: 500px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .analytics-description {
@@ -830,14 +824,12 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .monitoring-grid,
-    .analytics-content {
+    .monitoring-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
     
-    .monitoring-visual,
-    .analytics-visual {
+    .monitoring-visual {
         order: -1;
     }
 }

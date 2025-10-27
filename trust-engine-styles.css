@@ -449,12 +449,8 @@
 }
 
 .llm-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .llm-text .section-label {
@@ -907,14 +903,12 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .execution-grid,
-    .llm-content {
+    .execution-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
 
-    .execution-visual,
-    .llm-visual {
+    .execution-visual {
         order: -1;
     }
 

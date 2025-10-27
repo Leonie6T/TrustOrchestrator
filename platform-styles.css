@@ -3933,7 +3933,7 @@ button:focus-visible,
 
 .security-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -4292,6 +4292,12 @@ button:focus-visible,
    ARCHITECTURE RESPONSIVE DESIGN
    =================================== */
 
+@media (max-width: 1024px) {
+    .security-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .environment-flow {
         flex-direction: column;
@@ -4386,13 +4392,15 @@ button:focus-visible,
 
 /* Deployment Options */
 .deployment-options {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 2rem;
     margin-bottom: 3rem;
 }
 
 .deployment-card {
+    max-width: 600px;
+    width: 100%;
     background: white;
     border-radius: 20px;
     padding: 2rem;
